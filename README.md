@@ -40,3 +40,7 @@ Se accede a los atributos con la notación de punto.
 `instancia.metodo()`  
 Puede tener atributos privados. Por convención comienzan con _
 
+#### Decomposición
+* Partir un problema en problemas más pequeños.
+* Las clases permiten crear mayores abstracciones en formas de componentes.
+* Cada clase se encarga de una parte del problema y el programa se vuelve más fácil de mantener
