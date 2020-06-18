@@ -101,3 +101,7 @@ class Cuadrado(Rectangulo):
         # Importo las propiedades de la superclase
         super().__init__(lado, lado)
 ```
+
+#### Polimorfismo
+* Es la habilidad de tomar varias formas
+* En python, nos permite cambiar el comportamiento de una superclase para adaptarlo a la subclase, por ej cambiando métodos
