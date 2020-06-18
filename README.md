@@ -49,3 +49,31 @@ Puede tener atributos privados. Por convención comienzan con _
 * Enfocarnos en la información relevante
 * Separar la información central de los detalles secundarios
 * Podemos usar variables y métodos(privados o públicos)
+
+#### Encapsulación
+Es parte de la programación defensiva, para controlar cuándo y como se modifica una clase, se usan gracias a los decoradores.
+* Permite agrupar datos y su comportamiento
+* Controla el acceso a dichos datos
+* Previene modificaciones no autorizadas
+Sintaxis:
+```python
+class CasillaDeVotación:
+    def __init__(self, identificador, pais):
+        self._identificador = identificador
+        self._pais = pais
+        self._region = None
+
+    # Creo un getter a través del decorador @property
+    @property
+    def region(self):
+        return self._region
+
+    # Creo el setter a traves de otro decorator @nombre_propiedad.setter, puede contener logica como en este caso
+    @region.setter
+    def set_region(self, region):
+        if region in self._pais:
+            self._region = region
+        else:
+            raise ValueError(f'La region {region} no es valida en {self._pais}')
+
+```
