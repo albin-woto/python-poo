@@ -77,3 +77,27 @@ class CasillaDeVotación:
             raise ValueError(f'La region {region} no es valida en {self._pais}')
 
 ```
+
+#### Herencia
+* Permite modelar una jerarquía de clases
+* Permite compartir un comportamiento común en la jerarquía
+* Al padre se le conoce como superclase y al hijo como subclase
+
+Sintaxis
+```python
+# Creo superclase
+class Rectangulo:
+
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
+
+    def area(self):
+        return self.base * self.altura
+#Creo subclase que hereda de superclase
+class Cuadrado(Rectangulo):
+
+    def __init__(self, lado):
+        # Importo las propiedades de la superclase
+        super().__init__(lado, lado)
+```
