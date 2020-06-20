@@ -113,3 +113,59 @@ Como lo mido? Mediante aproximaciones:
 * Cronometrar el tiempo en el que corre un algoritmo(hay que tener en cuenta que esta limitada por el hardware que use)
 * Contar los pasos con una medida abstracta de operación
 * Contar los pasos conforme nos aproximamos al infinito
+
+#### Notación asintótica (Big O notation)
+* No importan variaciones pequeñas.
+* El enfoque se centra en lo que pasa conforme el tamaño del problema se acerca al infinito
+* Mejor de los casos, promedio, peor de los casos
+* Big O
+* Nada mas importa el término de mayor tamaño
+###### Ley de la suma
+```python
+# Suponiendo una funcion lineal
+def f(n):
+    for i in range(n):
+        print(i)
+    for i in range(n):
+        print(i)
+```
+`O(n) + O(n) = O(n + n) = O(2n) = O(n)`
+```python
+# Suponiendo una funcion lineal
+def f(n):
+    for i in range(n):
+        print(i)
+    for i in range(n * n):
+        print(i)
+```
+`O(n) + O(n * n) = O(n + n^2) = O(n^2)`
+###### Ley de la multiplicacion
+```python
+def f(n):
+# Tengo un loop dentro de otro
+    for i in range(n):
+        print(i)
+        for j in range(n):
+            print(i, j)
+```
+`O(n) * O(n) = O(n * n) = O(n^2)`
+###### Recursividad múltiple
+```python
+def fibonacci(n):
+    if n == 0 or n == 1:
+        return 1
+    return fibonacci(n - 1) + fibonacci(n - 2)
+```
+Por cada llamada de fibonacci, retorno 2 llamadas y cada vez crece mas
+`O(2^n)`
+
+#### Orden Big O notation
+* O(1) Constante
+* O(log(log(n))) SubLogarítmica
+* O(log(n)) Logarítmica
+* O(n) Lineal
+* O(n log(n)) Logarítmica lineal (puede llegar a servir, pero una contante n no se puede evitar)
+* O(n^2) Polinomial (puede servir si no es exesivamente grande, no recomendables)
+* O(2^n) Exponencial
+* O(n!) Factorial
+* O(n^n) Potencial exponencial
