@@ -105,3 +105,11 @@ class Cuadrado(Rectangulo):
 #### Polimorfismo
 * Es la habilidad de tomar varias formas
 * En python, nos permite cambiar el comportamiento de una superclase para adaptarlo a la subclase, por ej cambiando métodos
+
+#### Complejidad algorítmica
+* Se analiza la complejidad temporal vs complejidad espacial
+* A la complejidad temporal podemos definirla como T(n)  
+Como lo mido? Mediante aproximaciones:
+* Cronometrar el tiempo en el que corre un algoritmo(hay que tener en cuenta que esta limitada por el hardware que use)
+* Contar los pasos con una medida abstracta de operación
+* Contar los pasos conforme nos aproximamos al infinito
