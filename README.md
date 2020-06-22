@@ -106,7 +106,7 @@ class Cuadrado(Rectangulo):
 * Es la habilidad de tomar varias formas
 * En python, nos permite cambiar el comportamiento de una superclase para adaptarlo a la subclase, por ej cambiando métodos
 
-#### Complejidad algorítmica
+### Complejidad algorítmica
 * Se analiza la complejidad temporal vs complejidad espacial
 * A la complejidad temporal podemos definirla como T(n)  
 Como lo mido? Mediante aproximaciones:
@@ -169,3 +169,9 @@ Por cada llamada de fibonacci, retorno 2 llamadas y cada vez crece mas
 * O(2^n) Exponencial
 * O(n!) Factorial
 * O(n^n) Potencial exponencial
+
+### Algoritmos de búsqueda y ordenación
+
+#### Búsqueda lineal
+Busca en todos los elementos de manera secuencial
+Tiene O(n), ya que en el peor de los casos demora n veces en llegar al valor buscado
