@@ -175,3 +175,9 @@ Por cada llamada de fibonacci, retorno 2 llamadas y cada vez crece mas
 #### Búsqueda lineal
 Busca en todos los elementos de manera secuencial
 Tiene O(n), ya que en el peor de los casos demora n veces en llegar al valor buscado
+
+#### Búsqueda binaria
+* La lista debe estar ordenada. Si no lo está y sólo necesito buscar una vez conviene búsqueda lineal, si no es mejor ordenar y ejecutar la búsqueda binaria mas de una vez
+* Divide and conquer
+* El problema se divide en 2 en cada iteración
+* ¿Cúal es el peor caso? O(log n)
