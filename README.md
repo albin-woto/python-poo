@@ -181,3 +181,8 @@ Tiene O(n), ya que en el peor de los casos demora n veces en llegar al valor bus
 * Divide and conquer
 * El problema se divide en 2 en cada iteración
 * ¿Cúal es el peor caso? O(log n)
+
+#### Ordenamiento de burbuja (Bubble sort)
+El ordenamiento de burbuja es un algoritmo que recorre repetidamente una lista que necesita ordenarse. Compara elementos adyacentes y los intercambia si estan en el orden incorrecto: Este procedimiento se repite hasta que no se requieren mas intercambios, lo que indica que la lista se encuentra ordenada.  
+Luego de la primera ronda, el algoritmo nos asegura que el número más grande lo llevará al final(útil si busco un max).  
+Tiene O(n^2) por lo que no es bueno para grandes listas.
