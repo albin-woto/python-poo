@@ -186,3 +186,25 @@ Tiene O(n), ya que en el peor de los casos demora n veces en llegar al valor bus
 El ordenamiento de burbuja es un algoritmo que recorre repetidamente una lista que necesita ordenarse. Compara elementos adyacentes y los intercambia si estan en el orden incorrecto: Este procedimiento se repite hasta que no se requieren mas intercambios, lo que indica que la lista se encuentra ordenada.  
 Luego de la primera ronda, el algoritmo nos asegura que el número más grande lo llevará al final(útil si busco un max).  
 Tiene O(n^2) por lo que no es bueno para grandes listas.
+
+#### Ordenamiento por inserción
+El ordenamiento por inserción es uno de los algoritmos más comunes que estudian
+los Científicos del Cómputo. Es intuitivo y fácil de implementar, pero es muy
+ineficiente para listas de gran tamaño. Una de las características del ordenamiento por inserción es que ordena en “su
+lugar.” Es decir, no requiere memoria adicional para realizar el ordenamiento
+ya que simplemente modifican los valores en memoria.  
+La definición es simple:
+
+Una lista es dividida entre una sublista ordenada y otra sublista desordenada.
+Al principio, la sublista ordenada contiene un solo elemento, por lo que por
+definición se encuentra ordenada.
+
+A continuación se evalua el primer elemento dentro la sublista desordenada para
+que podamos insertarlo en el lugar correcto dentro de la lista ordenada.
+
+La inserción se realiza al mover todos los elementos mayores al elemento que
+se está evauluando un lugar a la derecha.
+
+Continua el proceso hasta que la sublista desordenada quede vacia y, por lo
+tanto, la lista se encontrará ordenada.
+En el peor de los casos es O(n^2)
