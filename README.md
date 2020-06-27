@@ -239,3 +239,18 @@ Cuando me pasan o descargo un proyecto, generalmente viene un archivo llamado re
 `pip install -r requirements.txt`  
 Puedo crear este archivo en mi proyecto, luego de instalar todos los paquetes necesarios, de la siguiente forma:  
 `pip freeze > requirements.txt`  
+
+### ¿Por qué graficar?
+* Reconocimiento de patrones
+* Predicción de una serie
+* Simplifica una interpretación y las conclusiones acerca de los datos
+
+> Tener cuidado de no ver patrones por todos lados, primero evaluar los números o funciones, ver si puede haber un posible patrón y allí buscarlo. No encasillarse en ver si hay un patrón si o si.
+
+#### Graficado simple
+Existen muchas librerías para esto como matplotlib, pylab, bokeh, etc. Depende el caso de uso es lo que voy a implementar.
+* Bokeh permite construir graficas complejas de manera rápida y con comandos simples
+* Permite exportar a varios formatos como html, notebooks, imágenes, etc.
+* Bokeh se puede utilizar en el servidor con Flask Y Django
+
+> Tener siempre en cuenta que la representación gráfica tenga significado y se pueda entender, no sirve hacer cualquier gráfica porque sí.
