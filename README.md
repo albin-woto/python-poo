@@ -187,7 +187,7 @@ El ordenamiento de burbuja es un algoritmo que recorre repetidamente una lista q
 Luego de la primera ronda, el algoritmo nos asegura que el número más grande lo llevará al final(útil si busco un max).  
 Tiene O(n^2) por lo que no es bueno para grandes listas.
 
-#### Ordenamiento por inserción
+#### Ordenamiento por inserción (Insertion sort)
 El ordenamiento por inserción es uno de los algoritmos más comunes que estudian
 los Científicos del Cómputo. Es intuitivo y fácil de implementar, pero es muy
 ineficiente para listas de gran tamaño. Una de las características del ordenamiento por inserción es que ordena en “su
@@ -208,3 +208,6 @@ se está evauluando un lugar a la derecha.
 Continua el proceso hasta que la sublista desordenada quede vacia y, por lo
 tanto, la lista se encontrará ordenada.
 En el peor de los casos es O(n^2)
+
+#### Ordenamiento por mezcla (Merge sort)
+Es una mezcla de algoritmo de divide y conquista. Primero divide una lista en partes iguales hasta que quedan sublistas de 1 o 0 elementos. Luego las recombina en forma ordenada. Es un algoritmo de O(n log(n)).
