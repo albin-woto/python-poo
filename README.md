@@ -211,3 +211,31 @@ En el peor de los casos es O(n^2)
 
 #### Ordenamiento por mezcla (Merge sort)
 Es una mezcla de algoritmo de divide y conquista. Primero divide una lista en partes iguales hasta que quedan sublistas de 1 o 0 elementos. Luego las recombina en forma ordenada. Es un algoritmo de O(n log(n)).
+
+### Ambientes virtuales
+* Permite aislar el ambient para poder instalar diversas veriones de paquetes
+* A partir de python 3 se invluye en la librería estándar en el módulo venv
+* Ningún profesional de python trabaja sin ellos
+
+Para crearlo puedo usar venv o virtualenv, env es el nombre del entorno, generalmente se usa env, venv  
+`python3.8 -m venv env`  
+Para activar el ambiente en linux o unix  
+`source env/bin/activate`  
+Para activarlo en windows  
+`source env/scripts/activate`  
+Para desactivarlo  
+`deactivate`
+
+#### Pip
+* Permite descargar paquetes de terceros para utilizar en nuestro programa
+* Permite compartir nuestros paquetes con terceros
+* Permite especificar la versión del paquete que necesitamos
+
+Tener en cuenta que si instalo de forma directa sin ingresar a un ambiente virtual, instalará el paquete de forma global, así no puedo manejar más de una versión a la vez. Por lo que si quiero probar una versión en particular de un paquete en un proyecto, primero debo inicializar el ambiente y luego instalar el paquete con:  
+`pip3 install bokeh`  
+Si quiero ver que tengo instalado en el ambiente:  
+`pip freeze`  
+Cuando me pasan o descargo un proyecto, generalmente viene un archivo llamado requirements.txt con los paquetes que necesita. Los instalo de la siguiente  forma:  
+`pip install -r requirements.txt`  
+Puedo crear este archivo en mi proyecto, luego de instalar todos los paquetes necesarios, de la siguiente forma:  
+`pip freeze > requirements.txt`  
