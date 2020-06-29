@@ -1,4 +1,4 @@
-## README que contiene la teoría del curso
+## README
 
 ### Tipos de datos abstractos
 En python todo es un objeto y tiene un tipo
@@ -213,7 +213,7 @@ En el peor de los casos es O(n^2)
 Es una mezcla de algoritmo de divide y conquista. Primero divide una lista en partes iguales hasta que quedan sublistas de 1 o 0 elementos. Luego las recombina en forma ordenada. Es un algoritmo de O(n log(n)).
 
 ### Ambientes virtuales
-* Permite aislar el ambient para poder instalar diversas veriones de paquetes
+* Permite aislar el ambiente para poder instalar diversas veriones de paquetes
 * A partir de python 3 se invluye en la librería estándar en el módulo venv
 * Ningún profesional de python trabaja sin ellos
 
@@ -254,3 +254,10 @@ Existen muchas librerías para esto como matplotlib, pylab, bokeh, etc. Depende 
 * Bokeh se puede utilizar en el servidor con Flask Y Django
 
 > Tener siempre en cuenta que la representación gráfica tenga significado y se pueda entender, no sirve hacer cualquier gráfica porque sí.
+
+
+### Introducción a la optimización
+* El concepto de optimizacion permite resolver muchos problemas de manera computacional
+* Una función objetivo que debemos maximizar o minimizar
+* Una serie de limitantes que debemos respetar
+Por ejemplo en algoritmos de rutas más rápidas para ir de un punto a otro(waze)
